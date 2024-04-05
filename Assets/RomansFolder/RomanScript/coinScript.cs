@@ -5,6 +5,7 @@ using UnityEngine;
 public class coinScript : MonoBehaviour
 {
     public float rotateSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,4 +23,5 @@ public class coinScript : MonoBehaviour
         //Rotation of the coins
         transform.Rotate(0, 0, rotateSpeed);
     }
+
 }

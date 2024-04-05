@@ -8,6 +8,11 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float _moveSpeed;
 
+    int score = 0;
+    public int winScore;
+    public GameObject winText;
+
+
     private void FixedUpdate()
     {
         // Calculate movement direction based on joystick input
@@ -21,6 +26,23 @@ public class PlayerController : MonoBehaviour
         {
             Quaternion targetRotation = Quaternion.LookRotation(movementDirection);
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 0.1f); // Adjust interpolation value if needed
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Coin")
+        {
+            Debug.Log("Coin collected!"); // Check if coin is detected
+                                          //Deactivate the coin when collided
+            other.gameObject.SetActive(false);
+            score++;
+
+            //You win text display
+            if (score >= winScore)
+            {
+                winText.SetActive(true);
+            }
         }
     }
 }
