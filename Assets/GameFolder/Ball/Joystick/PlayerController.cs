@@ -1,26 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody), typeof (BoxCollider))]
+[RequireComponent(typeof(Rigidbody), typeof(BoxCollider))]
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private FixedJoystick _joystick;
-    [SerializeField] private Animator _animator;
 
     [SerializeField] private float _moveSpeed;
 
     private void FixedUpdate()
     {
-        _rigidbody.velocity = new Vector3(_joystick.Horizontal * _moveSpeed, _rigidbody.velocity.y, _joystick.Vertical * _moveSpeed);
+        // Calculate movement direction based on joystick input
+        Vector3 movementDirection = new Vector3(_joystick.Horizontal, 0f, _joystick.Vertical).normalized;
 
-        if (_joystick.Horizontal != 0 || _joystick.Vertical != 0)
+        // Apply movement force
+        _rigidbody.velocity = movementDirection * _moveSpeed;
+
+        // Rotate the player to face the movement direction
+        if (movementDirection.magnitude > 0.1f)
         {
-            transform.rotation = Quaternion.LookRotation(_rigidbody.velocity);
-            _animator.SetBool("isRunning", true);
+            Quaternion targetRotation = Quaternion.LookRotation(movementDirection);
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 0.1f); // Adjust interpolation value if needed
         }
-        else
-            _animator.SetBool("isRunning", false);
     }
 }
