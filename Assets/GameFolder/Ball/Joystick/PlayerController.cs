@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public int winScore;
     public GameObject winText;
 
+    public AudioSource audioPlayer;
+
 
     private void FixedUpdate()
     {
@@ -34,7 +36,9 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "Coin")
         {
             Debug.Log("Coin collected!"); // Check if coin is detected
-                                          //Deactivate the coin when collided
+
+            audioPlayer.Play();
+            //Deactivate the coin when collided
             other.gameObject.SetActive(false);
             score++;
 
