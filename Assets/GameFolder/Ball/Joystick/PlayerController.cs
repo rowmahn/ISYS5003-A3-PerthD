@@ -6,29 +6,31 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private FixedJoystick _joystick;
 
-    [SerializeField] private float _moveSpeed;
+    
+    [SerializeField]private float Speed = 5;
+    
 
     int score = 0;
     public int winScore;
     public GameObject winText;
 
-    public AudioSource audioPlayer;
-
 
     private void FixedUpdate()
     {
-        // Calculate movement direction based on joystick input
-        Vector3 movementDirection = new Vector3(_joystick.Horizontal, 0f, _joystick.Vertical).normalized;
+     
+    
+        //Step #2
+        //Change Input.GetAxis (or the input that you using) to Joystick.Vertical or Joystick.Horizontal
+        float v = _joystick.Vertical; //get the vertical value of joystick
+        float h = _joystick.Horizontal;//get the horizontal value of joystick
+    
+        //in case you using keys instead of axis (due keys are bool and not float) you can do this:
+        //bool isKeyPressed = (Joystick.Horizontal > 0) ? true : false;
 
-        // Apply movement force
-        _rigidbody.velocity = movementDirection * _moveSpeed;
-
-        // Rotate the player to face the movement direction
-        if (movementDirection.magnitude > 0.1f)
-        {
-            Quaternion targetRotation = Quaternion.LookRotation(movementDirection);
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 0.1f); // Adjust interpolation value if needed
-        }
+        //ready!, you not need more.
+        Vector3 translate = (new Vector3(h, 0, v) * Time.deltaTime)*Speed;
+        transform.Translate(translate);
+    
     }
 
     private void OnTriggerEnter(Collider other)
@@ -36,9 +38,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "Coin")
         {
             Debug.Log("Coin collected!"); // Check if coin is detected
-
-            audioPlayer.Play();
-            //Deactivate the coin when collided
+                                          //Deactivate the coin when collided
             other.gameObject.SetActive(false);
             score++;
 
