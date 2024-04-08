@@ -282,6 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d094879f5a80474695c151007af3ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 400915431}
   arObjectToSpawn: {fileID: 4800839809881058091, guid: 9e0a093a368ee4f10b7c6c056f5f7077, type: 3}
   placementIndicator: {fileID: 1192545533}
 --- !u!4 &760650461
