@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d094879f5a80474695c151007af3ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 400915431}
+  arcamera: {fileID: 400915431}
   arObjectToSpawn: {fileID: 4800839809881058091, guid: 9e0a093a368ee4f10b7c6c056f5f7077, type: 3}
   placementIndicator: {fileID: 1192545533}
 --- !u!4 &760650461
@@ -596,6 +596,7 @@ GameObject:
   - component: {fileID: 1987519220}
   - component: {fileID: 1987519219}
   - component: {fileID: 1987519218}
+  - component: {fileID: 1987519222}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -659,3 +660,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1987519222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987519217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d094879f5a80474695c151007af3ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arcamera: {fileID: 400915431}
+  arObjectToSpawn: {fileID: 4800839809881058091, guid: 9e0a093a368ee4f10b7c6c056f5f7077, type: 3}
+  placementIndicator: {fileID: 1192545533}

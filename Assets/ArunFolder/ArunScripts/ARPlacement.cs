@@ -6,7 +6,7 @@ using UnityEngine.XR.ARSubsystems;
 
 public class ARPlacement : MonoBehaviour
 {
-    public Camera camera;
+    public Camera arcamera;
     public GameObject arObjectToSpawn;
     public GameObject placementIndicator;
     private GameObject spawnedObject;
@@ -17,9 +17,13 @@ public class ARPlacement : MonoBehaviour
     void Start()
     {
         aRRaycastManager = FindObjectOfType<ARRaycastManager>();
+
+        if (arcamera == null)
+        {
+            arcamera = Camera.main;
+        }
     }
 
-    // need to update placement indicator, placement pose and spawn 
     void Update()
     {
         if (spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
@@ -48,7 +52,8 @@ public class ARPlacement : MonoBehaviour
 
     void UpdatePlacementPose()
     {
-        var screenCenter = camera.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
+        if (arcamera == null) return;
+        var screenCenter = arcamera.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
         var hits = new List<ARRaycastHit>();
         aRRaycastManager.Raycast(screenCenter, hits, TrackableType.Planes);
 
