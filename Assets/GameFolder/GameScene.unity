@@ -7219,6 +7219,8 @@ MonoBehaviour:
   audioPlayer: {fileID: 834446178}
   coinCollectSound: {fileID: 8300000, guid: 329e6f20a21a1473a9bd11c3efdb2353, type: 3}
   winSound: {fileID: 8300000, guid: 2af1b0566fa3b47789e07d953b1bf848, type: 3}
+  fallThreshold: -2
+  gameOverText: {fileID: 0}
 --- !u!65 &1907585766
 BoxCollider:
   m_ObjectHideFlags: 0
