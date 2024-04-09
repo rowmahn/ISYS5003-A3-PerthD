@@ -20,9 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ArunFolder/ArunScene.unity
     guid: 57f9f32889e29434c838c3cf3cf35e33
+  - enabled: 1
+    path: Assets/RomansFolder/RomanARFolder/RomanARScene.unity
+    guid: 17785709a1db441a48db2415be3e3ccc
   - enabled: 0
-    path: Assets/ArunFolder/samplear.unity
-    guid: a66406cda4ddd854a90b7a05dd5cf6ca
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: deda75c8f5ba54d42917edeaad2a6df7, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 6a720f3a10eb2de45a8a3391c9ec6890, type: 2}
