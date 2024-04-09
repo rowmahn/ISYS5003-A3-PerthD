@@ -4,11 +4,7 @@
 # Team Members
 
 ## Roman Dulal
-
 ## Arun Guni
-
 ## Rahul Reddy
-
 ## Ajay Bhat
-
 ## Sourabh
