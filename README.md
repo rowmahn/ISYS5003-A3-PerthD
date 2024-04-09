@@ -8,3 +8,35 @@
 ### Rahul Reddy
 ### Ajay Bhat
 ### Sourabh
+
+## Overview
+
+
+## Theme
+
+
+## Features
+
+
+## Technical Specifications
+- **Unity Version**: Developed in Unity 2021.3.18f1.
+- **Resolution**: Optimized for 1920x1080px .
+
+## User Feedback
+
+
+## Challenges and Solutions
+
+## Future Improvements
+
+## Itch.io Link
+
+
+## Installation
+
+
+## How to Play
+#### MainMenu:
+#### GameMenu:
+#### ARScene:
+#### GameScene:
