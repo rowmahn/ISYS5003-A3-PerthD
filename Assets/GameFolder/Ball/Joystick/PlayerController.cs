@@ -14,6 +14,9 @@
         public int winScore;
         public GameObject winText;
         public AudioSource audioPlayer;
+        public AudioClip coinCollectSound, winSound;
+     
+        
 
 
         private void FixedUpdate()
@@ -33,10 +36,11 @@
             if (other.gameObject.tag == "Coin")
             {
                 // Check if coin is detected
-                Debug.Log("Coin collected!"); 
+                Debug.Log("Coin collected!");
 
-                //Play sound when coin is collected
-                audioPlayer.Play();
+            //Play sound when coin is collected
+            audioPlayer.clip = coinCollectSound;
+            audioPlayer.Play();
 
                 //Deactivate the coin when collided
                 other.gameObject.SetActive(false);
@@ -45,6 +49,8 @@
                 //You win text display
                 if (score >= winScore)
                 {
+                    audioPlayer.clip = winSound;
+                    audioPlayer.Play();
                     winText.SetActive(true);
                 }
             }
