@@ -74,7 +74,10 @@ using UnityEngine.SceneManagement;
 
                         //Display text
                         winText.SetActive(true);
-                    }
+
+                        //Restart button
+                        restartBtn.SetActive(true);
+            }
                 }
             }
         void Update()
