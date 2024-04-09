@@ -58,7 +58,13 @@
                         //Hide Joystick
                         joystick.SetActive(false);
 
-                        
+                        // Freeze the ball's position
+                        _rigidbody.velocity = Vector3.zero;
+                        _rigidbody.constraints = RigidbodyConstraints.FreezePosition;
+
+                        _rigidbody.isKinematic = true;
+                        _rigidbody.angularVelocity = Vector3.zero;
+         
 
                         // Play audio clip
                         audioPlayer.clip = winSound;
