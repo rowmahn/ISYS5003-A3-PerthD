@@ -1,6 +1,7 @@
-        using UnityEngine;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
-        [RequireComponent(typeof(Rigidbody), typeof(BoxCollider))]
+[RequireComponent(typeof(Rigidbody), typeof(BoxCollider))]
         public class PlayerController : MonoBehaviour
         {
             [SerializeField] private Rigidbody _rigidbody;
@@ -21,6 +22,7 @@
         public GameObject gameOverText;
 
     public GameObject joystick;
+    public GameObject restartBtn;
 
 
 
@@ -99,11 +101,22 @@
 
             
 
-        //Play sound
-        audioPlayer.clip = gameOverSound;
+            //Play sound
+            audioPlayer.clip = gameOverSound;
             audioPlayer.Play();
 
             //Display text
             gameOverText.SetActive(true);
+
+            //Restart button
+            restartBtn.SetActive(true);
+
+
+        }
+
+        public void restartGame(string sceneName)
+        {
+        
+            SceneManager.LoadScene(sceneName);
         }
     }
