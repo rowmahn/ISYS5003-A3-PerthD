@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class ScaleAndRotateSlider : MonoBehaviour
 {
-    // we need two sliders
-    // we need min and max values of each
 
     private Slider scaleSlider;
     private Slider rotateSlider;
@@ -20,10 +18,6 @@ public class ScaleAndRotateSlider : MonoBehaviour
 
     void Start()
     {
-        // find the sliders by name
-        //initialize the max and min value when starting
-        // Add a listener to the slider when value is changed
-
 
         scaleSlider = GameObject.Find("ScaleSlider").GetComponent<Slider>();
         scaleSlider.minValue = scaleMinValue;
