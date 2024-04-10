@@ -748,7 +748,7 @@ Behaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39071746}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &39071757
 Camera:
   m_ObjectHideFlags: 0
@@ -22394,7 +22394,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GameScene
+          m_StringArgument: GameMenuScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1980652295
