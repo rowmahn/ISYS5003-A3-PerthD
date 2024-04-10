@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: Assets/GameFolder/GameScene.unity
     guid: 3f89a3ac12d6c624abe1164640d604d0
   - enabled: 1
-    path: Assets/ARFolder/ARMenuScene.unity
+    path: Assets/ARMenu/ARMenuScene.unity
     guid: 1fe0457c0c647724f8bfbf0e3305def5
   - enabled: 1
-    path: Assets/ArunFolder/ArunScene.unity
+    path: Assets/ArunFolder/ArunARScene.unity
     guid: 57f9f32889e29434c838c3cf3cf35e33
   - enabled: 1
     path: Assets/RomansFolder/RomanARFolder/RomanARScene.unity
