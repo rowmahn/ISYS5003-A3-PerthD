@@ -20029,10 +20029,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This group project has been developed by Perth Group D in accordance with
+  m_text: 'This group project has been developed by Perth Group D in accordance with
     the requirements of the Assessment for ISYS 5003 Principles of User Experience
-    Design, affiliated with Southern Cross University's Perth Campus.\n\nTeam Members:\n\nRoman
-    Dulal (24227472)\nArun Guni (24247878)\nRahul Reddy (24263201)\nAjay Bhatt \nSourabh"
+    Design, affiliated with Southern Cross University''s Perth Campus.
+
+
+    Team
+    Members:
+
+
+    Roman Dulal (24227472)
+
+    Arun Guni (24247878)
+
+    Rahul Reddy
+    (24263201)
+
+    Ajay Bhatt (23920615)
+
+    Sourabh'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
