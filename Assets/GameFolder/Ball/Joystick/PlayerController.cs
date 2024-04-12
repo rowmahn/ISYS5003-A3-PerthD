@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 [RequireComponent(typeof(Rigidbody), typeof(BoxCollider))]
         public class PlayerController : MonoBehaviour
@@ -9,6 +11,7 @@ using UnityEngine.SceneManagement;
 
     
             [SerializeField]private float Speed = 5;
+            
     
 
             int score = 0;
@@ -16,7 +19,7 @@ using UnityEngine.SceneManagement;
             public GameObject winText;
             public AudioSource audioPlayer;
             public AudioClip coinCollectSound, winSound, gameOverSound;
-
+    public TextMeshProUGUI scoretext;
         public float fallThreshold = -2f; 
         private bool isGameOver = false;
         public GameObject gameOverText;
@@ -36,7 +39,7 @@ using UnityEngine.SceneManagement;
        
                 Vector3 translate = (new Vector3(h, 0, v) * Time.deltaTime)*Speed;
                 transform.Translate(translate);
-    
+        scoretext.text = "Score: " + score.ToString();
             }
 
             private void OnTriggerEnter(Collider other)
@@ -53,6 +56,7 @@ using UnityEngine.SceneManagement;
                     //Deactivate the coin when collided
                     other.gameObject.SetActive(false);
                     score++;
+                    scoretext.text = score.ToString();
 
                     //You win text display
                     if (score >= winScore)
