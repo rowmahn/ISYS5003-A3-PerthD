@@ -13,7 +13,7 @@
 
 
 ## Theme
-
+As decide by Team Perth Group D in Assessment 2, our theme is based on Nature, where we have made environments are overall project based on Natural environment theme.
 
 ## Features
 
