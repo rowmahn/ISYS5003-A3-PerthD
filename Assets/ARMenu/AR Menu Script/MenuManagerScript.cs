@@ -20,4 +20,8 @@ public class MenuManagerScript : MonoBehaviour
     {
         creditPage.SetActive(false);
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
