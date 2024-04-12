@@ -38,6 +38,8 @@
 This AR Main Menu contains 3D environment along with the 3D AR spawnable object from AR scenes of each member. Clicking On Member's name will navigate to the individual AR SCENE. 
 Clicking on BALLGAME button will navigate to BallinGround Game Menu from where you can navigate to GameScene and enjoy playing the BallinGround 3D Game. 
 #### ARScenes:
-
+AR SCENES contains individual AR objects from each developer team members. Individual AR Scenes have their own functionalities and UI
 #### GameMenu:
+Game Menu is the main Game Menu Scene for our Ball in Ground Game, where you will find Play option to navigate to Ball Game. 
 #### GameScene:
+Game Scene is the Gameplay scene for Ball In Ground Game, where you can contol ball using joystick and collet coinst to win the game. 
