@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/MenuFolder/MainMenu.unity
+    path: 
     guid: 65e2bb4fa5c0adf4d994c090ad081c65
   - enabled: 1
     path: Assets/MenuFolder/GameMenuScene.unity
@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/RahulsFolder/AR Rahul.unity
     guid: 148959a806c06b64ca9d1e3a82357e6f
+  - enabled: 1
+    path: Assets/AjaysFolder/ARAjay.unity
+    guid: 47f2ee7a1fc87fe4c91a5d46ed6997f1
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
