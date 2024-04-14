@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AjaysFolder/ARAjay.unity
     guid: 47f2ee7a1fc87fe4c91a5d46ed6997f1
+  - enabled: 1
+    path: Assets/SaurabhsFolder/SourabhARScene.unity
+    guid: 0ae86a3497bb284478b0cd5974438e9d
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
