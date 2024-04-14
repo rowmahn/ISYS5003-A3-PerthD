@@ -301,6 +301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 766385436}
+  - component: {fileID: 766385437}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -323,6 +324,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &766385437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766385435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9aa7d3fbee36b54faba2e83aae9b137, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RaycastManager: {fileID: 491907713}
+  spawnablePrefab: {fileID: 8648683936988311182, guid: 958fba3aafd6dcd469065eceab7a3314, type: 3}
 --- !u!1 &1460595383
 GameObject:
   m_ObjectHideFlags: 0
