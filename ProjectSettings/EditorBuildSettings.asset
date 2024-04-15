@@ -7,16 +7,16 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 65e2bb4fa5c0adf4d994c090ad081c65
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/ARMenu/ARMenuScene.unity
+    guid: 1fe0457c0c647724f8bfbf0e3305def5
   - enabled: 1
     path: Assets/MenuFolder/GameMenuScene.unity
     guid: 0ffa1c8e0f6264766880f57584810f12
   - enabled: 1
     path: Assets/GameFolder/GameScene.unity
     guid: 3f89a3ac12d6c624abe1164640d604d0
-  - enabled: 1
-    path: Assets/ARMenu/ARMenuScene.unity
-    guid: 1fe0457c0c647724f8bfbf0e3305def5
   - enabled: 1
     path: Assets/ArunFolder/ArunARScene.unity
     guid: 57f9f32889e29434c838c3cf3cf35e33
